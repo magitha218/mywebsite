@@ -1,3 +1,33 @@
+body
+{
+    text-align: center;
+}
+#welcome {
+    color: #FFFFFF;
+    bottom: 0;
+    background: linear-gradient(#60ebeb 0%, #27ae60 100%);
+    display: table;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+#bio {
+    font-family: 'Cinzel Decorative', cursive;
+    padding: 50px;
+    text-align: center;
+}
+h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.line {
+    height: 6px;
+    background-color: #000;
+    width: 70px;
+    margin: 8px auto;
+}
 #contact iframe
 {
     width: 100%;
@@ -10,61 +40,21 @@
 {
     text-shadow: none;
 }
- 
+
+
+#videos iframe
+{
+    width: 80%;
+}
+
+
 input
 {
     background: grey;
 }
-.travel_maindiv{
-    border: 1px solid #c7c7c7;
-    padding-left: 0px;
-    padding-right: 0px;
-    float: none;
-}
-.travel_maindiv img{
-    width: 100%;
-}
-.travel_maindiv hr{
-    width: 230px;
-}
-.travel_maindiv h5,.travel_maindiv p{
-    margin-left: 20px;
-}
-.movie_head{
-    font-size: 20px;
-    padding: 6px 22px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-.movie_head i{
-    float: right;
-}
-.movie_text span{
-    color: gold;
-}
 
-.environment_li{
-    margin-top: 13px;
-}
-.environment_li h4{
-    border-bottom: 1px  solid white;
-    padding: 8px;
-}
-.book{
-    cursor:pointer;
-}
-.book hr{
-margin-bottom: 10px;
-}
-.modal-content{
-    margin-top: 100px;
-}
-.p_modal{
-    margin-right: 10px;
-}
-.img_modal{
-    display: inline-block;
-}
-.modal-body{
-    text-align: center;
+.my_nav_bar{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
 }
