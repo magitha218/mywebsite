@@ -1,57 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>C80</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<script src="Tmain.js"></script>
+<style>
+body{
+	background-image: url("https://i.postimg.cc/KzWwHPcq/racing.gif");
+    background-position: center;
+    background-size: cover;
+}
+#myCanvas
+{
+	border-width:10px;
+	background-color: white; 
+	border-style:ridge;
+}
 
+h1,h4
+{
+	color: white !important;
+}
+</style>		
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>car racing</title>
 </head>
-<body>
+<body onload="add();">
 <center>
-<h3 style="margin-top: 20px; margin-bottom: 20px; ">
-	List of guests
-</h3>
+<h1>CAR RACING GAME </h1>
+<h1>GAME STATUS : <span id=game_status></span></h1>
+<h4>
+	<canvas id="myCanvas" width="800" height="600"></canvas>
+	<b class="text-danger">NOTE : </b> IF CAR IS NOT VISIBLE PRESS ANY ARROW KEY
+</h4>
 
-<div id="rows">
-<span>1</span>
-<input type="text" placeholder="Name of the guest" id="name_of_the_1">
-<br>
-
-<span>2</span>
-<input type="text" placeholder="Name of the guest" id="name_of_the_student_2">
-<br>
-
-<span>3</span>
-<input type="text" placeholder="Name of the guest" id="name_of_the_3">
-<br>
-
-<span>4</span>
-<input type="text" placeholder="Name of the guest" id="name_of_the_4">
-</div>
-
-<button onclick="submit()" id="submit_button">
-	Submit
-</button>
-
-<div id="display_name_with_commas">
-</div>
-
-<hr>
-
-<div id="display_name_without_commas">
-</div>
-
-
-<button onclick="sorting()" id="sort_button">
-	Sort
-</button>
-
-<!--Additional Activity-->
-<br>
-<button onclick="new_update()">New update button</button>
 </center>
-<script type="text/javascript">
-
+<script src="main.js">
 </script>
 </body>
 </html>
